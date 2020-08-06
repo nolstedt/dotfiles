@@ -1,0 +1,4 @@
+alias rsync.move='rsync --bwlimit=2000 -r --no-perms --chmod=ugo=rwX --partial --progress --remove-source-files'
+alias rsync.move.fast='rsync -r --no-perms --chmod=ugo=rwX --partial --progress --remove-source-files'
+
+
