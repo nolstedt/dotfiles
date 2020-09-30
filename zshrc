@@ -10,4 +10,21 @@ if [ $# -eq 0 ]
 fi
 }
 
+gr() {
+if [ -z "$2" ]
+  then
+    what="*"
+  else
+    what=$2
+fi 
+
+if [ $# -eq 0 ]
+  then
+   echo "No arguments supplied"
+  else
+   grep -ir "$1" --include="$what" . 
+fi
+}
+
+eval "$(rbenv init -)"
 
