@@ -10,7 +10,7 @@ if [ $# -eq 0 ]
 fi
 }
 
-gr() {
+gr2() {
 if [ -z "$2" ]
   then
     what="*"
@@ -27,4 +27,6 @@ fi
 }
 
 eval "$(rbenv init -)"
+
+source ~/.shell_extra
 
