@@ -30,3 +30,6 @@ eval "$(rbenv init -)"
 
 source ~/.shell_extra
 
+unsetopt inc_append_history
+unsetopt share_history
+
